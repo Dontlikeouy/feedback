@@ -1,0 +1,51 @@
+body {
+  height: 100vh;
+}
+
+input,
+textarea {
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+  display: block;
+  width: 180px;
+}
+textarea {
+  width: 500px;
+  height: 150px;
+  resize: none;
+}
+
+.checker:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+.checker:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  border: 0;
+  background: #3e8b8b;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+button:hover {
+  background: #387c7c;
+}
+button:active {
+  background: #2b5f5f;
+}
